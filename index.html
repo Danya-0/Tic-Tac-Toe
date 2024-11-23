@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <p id="score">0 : 0</p>
+
+        <div id="board">
+            <div class="str" id="st1">
+                <button onclick = "switchPlayer(0)" class="cells" id="cell1"></button>
+                <button onclick = "switchPlayer(1)" class="cells" id="cell2"></button>
+                <button onclick = "switchPlayer(2)" class="cells" id="cell3"></button>
+            </div>
+
+            <div class="str" id="st2">
+                <button onclick = "switchPlayer(3)" class="cells" id="cell4"></button>
+                <button onclick = "switchPlayer(4)" class="cells" id="cell5"></button>
+                <button onclick = "switchPlayer(5)" class="cells" id="cell6"></button>
+            </div>
+
+            <div class="str" id="st3">
+                <button onclick = "switchPlayer(6)" class="cells" id="cell7"></button>
+                <button onclick = "switchPlayer(7)" class="cells" id="cell8"></button>
+                <button onclick = "switchPlayer(8)" class="cells" id="cell9"></button>
+            </div>
+        </div>
+
+        <div id="message"></div>
+
+        <button onclick="restart()" id="reset">Restart</button>
+    </body>
+
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, rgb(192, 242, 255), rgb(102, 214, 255));
+    margin: 0;
+    align-items: center;
+    display: flex;
+    color: black;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cells {
+    display: flex;
+    background-color: rgb(199, 229, 255);
+    border: 2px solid black;
+    font-size: large;
+    border-radius: 2px;
+    color: black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.cells:hover {
+    background-color: rgb(182, 206, 226);
+    transition: 0.4s;
+}
+
+.cells:active {
+    background-color: rgb(49, 124, 185);
+    transition: 0.07s;
+}
+
+#reset {
+    width: 120px;
+    height: 30px;
+    background-color:  rgb(49, 124, 185);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#reset:hover {
+    background-color: rgb(49, 105, 152);
+    transition: 0.4s;
+}
+
+#reset:active {
+    background-color: rgb(199, 229, 255);
+    transition: 0.07s;
+}
+
+#message {
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-top: 20px;
+}
+
+#score {
+    justify-content: center;
+    font-size: large;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
